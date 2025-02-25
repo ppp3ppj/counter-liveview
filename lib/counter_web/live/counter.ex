@@ -29,7 +29,7 @@ defmodule CounterWeb.Counter do
   def render(assigns) do
     ~H"""
     <div>
-      <h1 class="">The count is: <%= @val %> </h1>
+      <h1 class="">Counter: <%= @val %> </h1>
       <p class="text-center">
         <.button phx-click="dec">-</.button>
         <.button phx-click="inc">+</.button>
