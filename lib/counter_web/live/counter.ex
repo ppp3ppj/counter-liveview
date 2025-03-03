@@ -48,8 +48,7 @@ defmodule CounterWeb.Counter do
 
   def render(assigns) do
     ~H"""
-    <.live_component module={CounterComponent} id="counter" val={@val} />
-    <.live_component module={PresenceComponent} id="presence" present={@present} />
+    <.live_component module={CounterPresenceStatComponent} id="cp_stat" val={@val} present={@present}/>
     """
   end
 end
